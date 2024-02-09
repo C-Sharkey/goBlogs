@@ -1,0 +1,18 @@
+version = 0.1
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::912977438313:user/goBlogs-sam-template"
+permissions_provider = "AWS IAM"
+
+[dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::912977438313:user/goBlogs-sam-template"
+cloudformation_execution_role = "arn:aws:iam::912977438313:user/goBlogs-sam-template"
+artifacts_bucket = "goBlogs-sam-template"
+image_repository = ""
+region = "eu-west-1"
+
+[prod.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::912977438313:user/goBlogs-sam-template"
+cloudformation_execution_role = "arn:aws:iam::912977438313:user/goBlogs-sam-template"
+artifacts_bucket = "goBlogs-sam-template"
+image_repository = ""
+region = "eu-west-1"
