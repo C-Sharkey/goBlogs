@@ -13,7 +13,7 @@ env:
   PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   SAM_TEMPLATE: template.yaml
-  TESTING_STACK_NAME: goBlogs--dev
+  TESTING_STACK_NAME: goBlogs--develop
   TESTING_PIPELINE_EXECUTION_ROLE: arn:aws:iam::912977438313:user/goBlogs-sam-template
   TESTING_CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::912977438313:user/goBlogs-sam-template
   TESTING_ARTIFACTS_BUCKET: goBlogs-sam-template
@@ -22,7 +22,7 @@ env:
   # testing "sam package" and "sam deploy" commands.
   # TESTING_IMAGE_REPOSITORY = '0123456789.dkr.ecr.region.amazonaws.com/repository-name'
   TESTING_REGION: eu-west-1
-  PROD_STACK_NAME: goBlogs--prod
+  PROD_STACK_NAME: goBlogs--production
   PROD_PIPELINE_EXECUTION_ROLE: arn:aws:iam::912977438313:user/goBlogs-sam-template
   PROD_CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::912977438313:user/goBlogs-sam-template
   PROD_ARTIFACTS_BUCKET: goBlogs-sam-template
